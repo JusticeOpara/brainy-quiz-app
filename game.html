@@ -11,45 +11,59 @@
 </head>
 
 <body>
+
     <div class="container">
-        <div class="progress-bar">
-            <div class="progress-score">score</div>
-            <div class="question-hub"><p>Question 1/₁₀</p></div>
-        </div>
-        <div class="question-answer-section">
 
-            <h1 id="question">All this are javascript framework except?</h1>
+        <div id="loader"></div>
+        <div id="game" class="flex-center hidden">
+            <div class="progress-bar">
+                <div class="question-hub">
 
-            <div>
-                <div class="option-container">
-                    <p class="option-prefix">A</p>
-                    <p class="option-text">React</p>
+                    <p>Question <span id="questionCounter">1</span>/₁₀</p>
                 </div>
 
-                <div class="option-container">
-                    <p class="option-prefix">B</p>
-                    <p class="option-text">Angular</p>
+                <div class="progress-score">
+                    <p class="score-prefix">score</p>
+                    <h2 id="score">
+                        0
+                    </h2>
                 </div>
-
-                <div class="option-container">
-                    <p class="option-prefix">C</p>
-                    <p class="option-text">Python</p>
-                </div>
-
-                <div class="option-container">
-                    <p class="option-prefix">D</p>
-                    <p class="option-text">Vue.js</p>
-                </div>
-            </div>
-
-            <div class="submit-container">
-                <p id="submit">NEXT</p>
 
             </div>
 
+            <div class="question-answer-section">
+
+                <h1 id="question">All this are javascript framework except?</h1>
+
+                <div id="options">
+                    <div class="option-container">
+                        <p class="option-prefix">A</p>
+                        <p id="option-1" class="option-text"></p>
+                    </div>
+
+                    <div class="option-container">
+                        <p class="option-prefix">B</p>
+                        <p id="option-2" class="option-text"></p>
+                    </div>
+
+                    <div class="option-container">
+                        <p class="option-prefix">C</p>
+                        <p id="option-3" class="option-text"></p>
+                    </div>
+
+                    <div class="option-container">
+                        <p class="option-prefix">D</p>
+                        <p id="option-4" class="option-text"></p>
+                    </div>
+                </div>
+
+                <!-- <div class="submit-container"> -->
+                <!-- <p id="submit">NEXT</p> -->
+                <!-- </div> -->
+            </div>
         </div>
     </div>
-<script src="app.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
